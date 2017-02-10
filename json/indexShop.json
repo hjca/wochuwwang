@@ -1,0 +1,173 @@
+{
+    "data": [
+        {
+            "titleName": "每日必须",
+            "titleImg": "http://img.i-kitchen.cn/upload/b51f91b5-ca7e-4140-9429-fdf11a31ab0f.jpg",
+            "shopList": [
+                {
+                    "shopName": "杏鲍菇（200g）",
+                    "shopImg": "http://img.i-kitchen.cn/upload/4811818e-df58-4a13-a6f7-0b0703b4c70a.jpg",
+                    "oldPrice": "￥3.9",
+                    "price": 2.99
+                },
+                {
+                    "shopName": "水晶青虾仁300g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/a7f44e1b-accf-49a8-a346-93a501b2907c.jpg",
+                    "oldPrice": "",
+                    "price": 35
+                },
+                {
+                    "shopName": "中粮家佳康精肉丝300g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/120adb4f-f244-4080-89f8-d2d10596103b.jpg",
+                    "oldPrice": "￥18.99",
+                    "price": 12
+                },
+                {
+                    "shopName": "以色列西柚2粒装",
+                    "shopImg": "http://img.i-kitchen.cn/upload/16a7cfa6-3e79-47c3-b3c5-784e38a8ad6b.jpg",
+                    "oldPrice": "",
+                    "price": 12
+                },
+                {
+                    "shopName": "明治保加利亚顺滑柔和原味酸奶400g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/0db4cc6e-b830-41c6-8ff0-81b45b2273cf.jpg",
+                    "oldPrice": "",
+                    "price": 12.9
+                },
+                {
+                    "shopName": "安吉扁尖笋",
+                    "shopImg": "http://img.i-kitchen.cn/upload/e4fad7ef-66d9-478c-ae4c-d7dffb76e66c.jpg",
+                    "field": "value",
+                    "oldPrice": "￥8.9",
+                    "price": 7.9
+                }
+            ]
+        },
+        {
+            "titleName": "入店必抢",
+            "titleImg": "http://img.i-kitchen.cn/upload/a6ccd761-da4c-43b4-ba29-5c4e920f0987.jpg",
+            "shopList": [
+                {
+                    "shopName": "白蘑菇230g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/645ca32a-65ad-49f3-8335-80dcd3a4ee15.jpg",
+                    "oldPrice": "￥6.9",
+                    "price": 5.99
+                },
+                {
+                    "shopName": "新鲜活杀鳜鱼一条装450g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/30f16588-aabe-4905-b2a9-a72c7569cf49.jpg",
+                    "oldPrice": "￥59",
+                    "price": 43.9
+                },
+                {
+                    "shopName": "Smithfield美式培根180g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/ba77098e-6d88-4635-be31-deb5deaa3536.jpg",
+                    "oldPrice": "",
+                    "price": "￥19.8"
+                },
+                {
+                    "shopName": "佳沛意大利金奇异果6粒/盒",
+                    "shopImg": "http://img.i-kitchen.cn/upload/5c8deac4-c2ff-4e3e-bb8d-16613f6ea922.jpg",
+                    "oldPrice": "",
+                    "price": "￥39.9"
+                },
+                {
+                    "shopName": "光明牌930ml纯鲜牛奶（低温）",
+                    "shopImg": "http://img.i-kitchen.cn/upload/d54a89c1-c8aa-49dd-855f-8529db5398aa.jpg",
+                    "oldPrice": "￥16.9",
+                    "price": "￥13.8"
+                },
+                {
+                    "shopName": "冷鲜澳大利亚草饲西冷牛排200g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/5f44e4b9-0db4-4b22-8173-1de8dddf45c0.jpg",
+                    "oldPrice": "￥79",
+                    "price": 45
+                }
+            ]
+        },
+        {
+            "titleName": "新品专区",
+            "titleImg": "http://img.i-kitchen.cn/upload/a60f7847-84c0-4196-99c2-e1f8a32c76c9.jpg",
+            "shopList": [
+                {
+                    "shopName": "大娃娃菜1000g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/50759873-d3c0-4800-9e19-a280c3f4c738.jpg",
+                    "oldPrice": "",
+                    "price": "￥5.99"
+                },
+                {
+                    "shopName": "智利半壳蓝口贝500g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/3eab599f-e926-4c4d-af30-d772598ab827.jpg",
+                    "oldPrice": "",
+                    "price": "￥39"
+                },
+                {
+                    "shopName": "荷美尔Hormel经典炭烧猪排100g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/23d0d51e-34ba-42e2-9ebb-8049c49b3294.jpg",
+                    "oldPrice": "",
+                    "price": "￥14.9"
+                },
+                {
+                    "shopName": "黄蕉苹果2粒装苹果（苹果160g以上）",
+                    "shopImg": "http://img.i-kitchen.cn/upload/b45782af-2fce-492f-a465-7422acdc8e69.jpg",
+                    "oldPrice": "￥8.8",
+                    "price": "￥6.9"
+                },
+                {
+                    "shopName": "旨味小粒纳豆",
+                    "shopImg": "http://img.i-kitchen.cn/upload/caaca9ce-6a58-45ee-afd6-5b61d91cf4ba.jpg",
+                    "oldPrice": "",
+                    "price": "￥16.9"
+                },
+                {
+                    "shopName": "四海急冻八爪鱼味鱼球170g",
+                    "shopImg": "http://img.i-kitchen.cn/upload/34591d54-59f5-4202-bf4e-ae2c4ca8497f.jpg",
+                    "oldPrice": "￥12.9",
+                    "price": "￥10.9"
+                }
+            ]
+        },
+		{
+            "titleName": "本周新菜",
+            "titleImg": "http://img.i-kitchen.cn/upload/34769831-256d-4005-a2b2-9eed63aa7e0c.jpg",
+            "shopList": [
+                {
+                    "shopName": "虾皮炝炒时蔬",
+                    "shopImg": "http://img.i-kitchen.cn/upload/254cd356-3004-40a6-9562-cebde9cabdbd.jpg",
+                    "oldPrice": "",
+                    "price": "￥9.9"
+                },
+                {
+                    "shopName": "营养蒸三宝",
+                    "shopImg": "http://img.i-kitchen.cn/upload/f66d1642-581f-4424-a0e1-ae9281665ac7.jpg",
+                    "oldPrice": "",
+                    "price": "￥12.9"
+                },
+                {
+                    "shopName": "至尊口水鸡",
+                    "shopImg": "http://img.i-kitchen.cn/upload/ac43c0d9-5d87-4e87-81d3-242819e42e0f.jpg",
+                    "oldPrice": "￥18",
+                    "price": "￥13.9"
+                },
+                {
+                    "shopName": "野生小鱼干炒杭椒",
+                    "shopImg": "http://img.i-kitchen.cn/upload/9ab36e46-35e4-436b-b3d7-6abad274b60e.jpg",
+                    "oldPrice": "",
+                    "price": "￥18"
+                },
+                {
+                    "shopName": "白煨羊肉萝卜煲",
+                    "shopImg": "http://img.i-kitchen.cn/upload/f6cb34d6-b9ce-46ba-bfc4-a21e68f1a234.jpg",
+                    "oldPrice": "",
+                    "price": "￥19.9"
+                },
+                {
+                    "shopName": "藤椒金针肥牛",
+                    "shopImg": "http://img.i-kitchen.cn/upload/726830e6-d145-4f5b-aa5e-ef1e63d86ded.jpg",
+                    "oldPrice": "",
+                    "price": "￥25.9"
+                }
+            ]
+        }
+    ]
+}

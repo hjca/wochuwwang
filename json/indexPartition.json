@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "name": "经典西餐专区",
+            "image": "http://img.i-kitchen.cn/upload/b5d6a13c-a2c7-45f8-aab3-ca1987bdcac9.jpg"
+        },
+        {
+            "name": "中式大宴",
+            "image": "http://img.i-kitchen.cn/upload/a85b37a5-fdf5-4750-862d-72d99dbf5283.jpg"
+        },
+        {
+            "name": "中式国民早餐铺",
+            "image": "http://img.i-kitchen.cn/upload/5c0a2091-f4ff-4439-9f58-71bdd23259f9.jpg"
+        },
+        {
+            "name": "西式营养早餐",
+            "image": "http://img.i-kitchen.cn/upload/27938789-ffdb-4ed9-884d-a89fb0b62810.jpg"
+        },
+        {
+            "name": "新春暖炉",
+            "image": "http://img.i-kitchen.cn/upload/95b60358-0546-4910-afd8-a61f3abbb430.jpg"
+        },
+        {
+            "name": "零食专区",
+            "image": "http://img.i-kitchen.cn/upload/af655493-19d7-4b26-bd4a-cc87e828ec28.jpg"
+        },
+        {
+            "name": "新鲜活杀鱼",
+            "image": "http://img.i-kitchen.cn/upload/5230660d-81fc-4fe7-8639-776ccc870f7c.jpg"
+        },
+        {
+            "name": "新鲜肉禽区",
+            "image": "http://img.i-kitchen.cn/upload/609e7d66-48d9-4896-99cf-4682c62fb7a4.jpg"
+        },
+        {
+            "name": "懒人半成品",
+            "image": "http://img.i-kitchen.cn/upload/2e4e0c08-1ded-4178-8cfa-64fa3af68978.jpg"
+        }
+    ]
+}
