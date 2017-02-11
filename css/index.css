@@ -1,0 +1,58 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#ngView{
+	background-color: #f4f5f7;
+}
+
+#footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 1.38rem;
+	line-height: 1.38rem;
+	background-color: wheat;
+	width: 100%;
+	border-top: 0.05rem solid #fad1b6;
+	background-color: #FFFFFF;
+}
+#footer ul{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+#footer ul li>a{
+	text-decoration: none;
+}
+#footer ul li>a>figure>img{
+	width: 0.6rem;
+	height: 0.6rem;
+}
+#footer ul li>a>figure>figcaption{
+	position: absolute;
+	top: 0.4rem;
+	font-size: 110%;
+	color: #898989;
+	font-weight: bold;
+}
+
+.class1{
+	/* calc运算函数 */
+	height: calc(100% - 44px);
+}
+
+/* footer隐藏时候的样式 */
+.class2{
+	height: 100%;
+}

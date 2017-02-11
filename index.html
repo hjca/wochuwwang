@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		
+		<!-- 路由切换容器 -->
+		<div ng-view ng-class="{true : 'class1', false : 'class2'}[rootIsFooterShow]" id="ngView">
+			
+		</div>
+		
+		<!-- rootIsFooterShow 是一个全局变量，控制footer是否显示 -->
+		<div id="footer" ng-show="rootIsFooterShow">
+			<ul>
+				<li>
+					<a href="#/home">
+						<figure>
+							<img src="image/index_r.png"/>
+							<figcaption>首页</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="#/classify">
+						<figure>
+							<img src="image/shopping_n.png"/>
+							<figcaption>分类</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="#/cart">
+						<figure>
+							<img src="image/cart_n.png"/>
+							<figcaption>购物车</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="#/mine">
+						<figure>
+							<img src="image/my_n.png"/>
+							<figcaption>我的</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- jquery要在angularJS之前引入 -->
+		<script src="lib/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="lib/angular.min.js" ></script>
+		<script type="text/javascript" src="lib/angular-css.js" ></script>
+		<script type="text/javascript" src="lib/angular-route.js" ></script>
+		<script type="text/javascript" src="app.js" ></script>
+		<script src="lib/swiper-3.4.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 服务要在控制器之前引入 -->
+		<script type="text/javascript" src="js/services.js" ></script>
+		<script type="text/javascript" src="js/controllers.js" ></script>
+	</body>
+</html>

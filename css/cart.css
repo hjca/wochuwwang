@@ -1,0 +1,15 @@
+#login{
+	width: 3.0rem;
+	height: .8rem;
+	text-align: center;
+	line-height: .8rem;
+	border: 0.05rem solid #f67d30;
+	position: relative;
+	left: 35%;
+	top: 25%;
+}
+#login>a{
+	text-decoration: none;
+	color: #f67d30;
+	font-size: 0.4rem;
+}
