@@ -9,9 +9,28 @@
 </header>
 <main>
 	<!-- 轮播图 -->
-	<div class="swiper-container">
+	<div id="banner" class="swiper-container">
 		<div class="swiper-wrapper">
-			<!--<a href="###" class="swiper-slide"><img src=""/></a>-->
+			<a href="###" class="swiper-slide"><img src="image/homeImg1.jpg"/></a>
+			<a href="###" class="swiper-slide"><img src="image/homeImg2.jpg"/></a>
+			<a href="###" class="swiper-slide"><img src="image/homeImg3.jpg"/></a>
+			<a href="###" class="swiper-slide"><img src="image/homeImg4.jpg"/></a>
+			<a href="###" class="swiper-slide"><img src="image/homeImg5.jpg"/></a>
 		</div>
+		<div id="banner_pagination" class="swiper-pagination"></div>
+	</div>
+	
+	<div id="menu">
+		<ul>
+			<!--<li><a href=""><img src="image/homeImg1.jpg"/></a></li>
+			<li><a href=""><img src="image/homeImg1.jpg"/></a></li>
+			<li><a href=""><img src="image/homeImg1.jpg"/></a></li>
+			<li><a href=""><img src="image/homeImg1.jpg"/></a></li>-->
+			<li ng-repeat="item in homeCtrl.menus track by $index">
+				<a ng-href="javascript:void(0)">
+					<img ng-src="{{ homeCtrl.obj.src }}"/>	
+				</a>
+			</li>
+		</ul>
 	</div>
 </main>
