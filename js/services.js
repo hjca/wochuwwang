@@ -1,18 +1,21 @@
 angular.module("myApp")
-	.factory("HomeService",["$http",function($http){
-		var menu;
-		$http.get("json/index.json")
-			.success(function(result){
-				menu = result.data.menu;
-				console.log(menu);
-			})
-			.error(function(){
-				console.log("获取数据失败");
-			})
-			
-			return {
-				getData : function(){
-					return menu;
-				}
+	.factory("shopMessage",['$http','$rootScope',function($http,$rootScope){
+		
+		$http({
+            url:'./json/shopMessage.json',
+            method:'GET'
+        }).success(function(result){
+//响应成功
+            $rootScope.fistNav  = result.data;
+        }).error(function(data){
+//处理响应失败
+            console.log(data)
+        });
+
+		
+		return {
+			firstData : function(){
+				return $http.get("json/shopMessage.json");
 			}
+		}
 	}])

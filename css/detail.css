@@ -1,0 +1,175 @@
+main{
+	width: 100%;
+	height: 16.133rem;
+	overflow-y: auto;
+	/*position: absolute;
+	top: 0;*/
+}
+.swiper-container{
+	width: 100%;
+}
+.swiper-wrapper{
+	width: 100%;
+}
+.swiper-slide{
+	width: 100%;
+}
+.swiper-slide>img{
+	width: 100%;
+	height: 8rem;
+}
+
+#message1{
+	width: 100%;
+	height: 2.133rem;
+	background-color: white;
+	position: relative;
+	margin-bottom: 0.267rem;
+}
+#message1 span:nth-of-type(1){
+	font-size: 0.533rem;
+	position: absolute;
+	left: 0.347rem;
+	top: 0.133rem;
+}
+#message1 span:nth-of-type(2){
+	font-size: 0.347rem;
+	color: #898989;
+	position: absolute;
+	left: 0.4rem;
+	top: 1.067rem;
+}
+#price{
+	font-size: 0.427rem;
+	color: #FE4200;
+	position: absolute;
+	left: 0.4rem;
+	top: 1.6rem;
+}
+#oldPrice{
+	font-size: 0.347rem;
+	color: #A1A1A1;
+	text-decoration: line-through;
+	position: absolute;
+	left: 1.6rem;
+	top: 1.68rem;
+}
+#num{
+	position: absolute;
+	right: 0.4rem;
+}
+#num>img{
+	width: 0.8rem;
+	height: 0.8rem;
+	position: relative;
+	top: 0.453rem;
+}
+#num img:nth-of-type(1){
+	position: relative;
+	left: 0.293rem;
+}
+#num_1{
+	width: 0.8rem;
+	height: 0.8rem;
+	border-top: 0.027rem solid #e5e5e5;
+	border-bottom: 0.027rem solid #e5e5e5;
+	display: inline-block;
+	position: relative;
+	left: 0.16rem;
+	top: 0.20rem;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.48rem;
+}
+
+#jianjie{
+	width: 100%;
+	height: 1.33rem;
+	background-color: white;
+	line-height: 1.33rem;
+	position: relative;
+	margin-bottom: 0.267rem;
+}
+#jianjie>span{
+	color:#F68135;
+	font-size: 0.533rem;
+	margin-left: 0.4rem;
+}
+#jianjie>img{
+	width: 0.533rem;
+	position: absolute;
+	top: 0.187rem;
+	right: 0.4rem;
+}
+
+#message{
+	width: 100%;
+	height: 2.4rem;
+	padding-top: 0.267rem;
+	background-color: white;
+	position: relative;
+}
+#message>span{
+	font-weight: bold;
+	font-size: 0.347rem;
+	color: #666666;
+}
+#name>span{
+	font-weight: normal;
+}
+
+#name,#address,#saveStyle{
+	position: absolute;
+	left: 0.4rem;
+}
+#saveTime,#guige{
+	position: absolute;
+	left: 6.4rem;
+}
+
+#footer{
+	width: 100%;
+	height: 1.6rem;
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+}
+#footer>a>img{
+	width: 1.067rem;
+	height: 1.067rem;
+	position: absolute;
+	left: 0.533rem;
+	top: 0.267rem;
+}
+#addCart{
+	display: inline-block;
+	background-color: #FD4400;
+	width: 2.667rem;
+	height: 1.067rem;
+	border-radius: 10%;
+	position: absolute;
+	right: 0.533rem;
+	top: 0.267rem;
+	text-align: center;
+	line-height: 1.067rem;
+}
+#addCart>a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+#goback{
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.5);
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	z-index: 10;
+	border-radius: 50%;
+}
+#goback>img{
+	width: 100%;
+	height: 100%;
+}

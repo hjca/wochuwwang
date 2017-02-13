@@ -22,13 +22,57 @@
 	
 	<div id="menu">
 		<ul>
-			<!--<li><a href=""><img src="image/homeImg1.jpg"/></a></li>
-			<li><a href=""><img src="image/homeImg1.jpg"/></a></li>
-			<li><a href=""><img src="image/homeImg1.jpg"/></a></li>
-			<li><a href=""><img src="image/homeImg1.jpg"/></a></li>-->
 			<li ng-repeat="item in homeCtrl.menus track by $index">
+				<a href="javascript:void(0)">
+					<img src="{{ item.activity.img }}"/>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="list">
+		<ul>
+			<li ng-repeat="list in homeCtrl.lists track by $index">
 				<a ng-href="javascript:void(0)">
-					<img ng-src="{{ homeCtrl.obj.src }}"/>	
+					<img src="{{ list.img }}"/>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 推荐 -->
+	<div id="groom">
+		<img src="image/homeImg6.jpg"/>
+	</div>
+	<div id="listShop" ng-repeat="listShop in homeCtrl.listShops">
+		<img src="{{ listShop.titleImg }}"/>
+		<div id="listFood">
+			<ul>
+				<li ng-repeat="listFood in listShop.shopList">
+					<!-- 连接到商品详情界面 -->
+					<a href="#/detail/{{ listFood.shopId }}">
+						<figure>
+							<img src="{{ listFood.shopImg }}"/>
+							<figcaption>
+								<p>{{ listFood.shopName }}</p>
+								<span class="oldPrice">{{ listFood.oldPrice }}</span><br />
+								<span class="price">{{ listFood.price }}</span>
+								<img src="image/addcart.png" id="add" />
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 商品馆 -->
+	<div id="commodityMuseum">
+		<img src="image/homeImg7.jpg"/>
+	</div>
+	<div id="listCommodity">
+		<ul>
+			<li ng-repeat="listCommodity in homeCtrl.listCommodities track by $index">
+				<a href="javascript:void(0)">
+					<img src="{{ listCommodity.image }}"/>
 				</a>
 			</li>
 		</ul>

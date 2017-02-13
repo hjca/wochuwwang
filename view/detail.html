@@ -1,0 +1,50 @@
+<main>
+	<!-- 轮播图 -->
+	<div id="banner" class="swiper-container">
+		<div class="swiper-wrapper">
+			<div ng-repeat="slide in detailCtrl.slides" class="swiper-slide">
+				<img src="{{ slide.imgUrl }}" alt="(1).jpg">
+			</div>
+		</div>
+		<div id="banner_pagination" class="swiper-pagination"></div>
+	</div>
+	
+	<div id="goback">
+		<img src="image/back_icon_bg3.png"/>
+	</div>
+	
+	<div id="message1">
+		<span>{{ detailCtrl.shopTitles }}</span>
+		<br />
+		<span>{{ detailCtrl.flavors }}</span>
+		<br />
+		<span id="price">{{ detailCtrl.pric }}</span>
+		<span id="oldPrice">{{ detailCtrl.oldPric }}</span>
+		<div id="num">
+			<img src="image/btn_des_down.png" ng-click="detailCtrl.sub();"/>
+			<div id="num_1" ng-model="detailCtrl.num">{{ detailCtrl.num }}</div>
+			<img src="image/btn_add_down.png" ng-click="detailCtrl.add();"/>
+		</div>
+	</div>
+	<div id="jianjie">
+		<span>商品简介</span>
+		<img src="image/right_arrow_orange.png"/>
+	</div>
+	<div id="message">
+		<span id="name">品名：<span>{{ detailCtrl.names }}</span></span>
+		<br />
+		<br />
+		<span id="address">产地：<span>{{ detailCtrl.addres }}</span></span>
+		<span id="saveTime">保质期：<span>{{ detailCtrl.saveTim }}</span></span>
+		<br />
+		<br />
+		<span id="saveStyle">存储条件：<span>{{ detailCtrl.saveT }}</span></span>
+		<span id="guige">规格：<span>{{ detailCtrl.cations }}</span></span>
+	</div>
+</main>
+<div id="footer">
+	<a href="javascript:void(0)"><img src="image/cart_n.png"/></a>
+	<div id="addCart">
+		<a href="javascript:void(0)">加入购物车</a>
+	</div>
+</div>

@@ -1,0 +1,102 @@
+{
+    "shopMessage": [
+        {
+            "shopId": 1001,
+            "slideImg": [
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/48153b30-d8f5-40f6-947b-b9eaefb28961.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/4811818e-df58-4a13-a6f7-0b0703b4c70a.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/6dcf5042-b608-4938-aa4c-c5d41784e85f.jpg"
+                }
+            ],
+            "shopTitle": "杏鲍菇（200g）",
+            "flavor": "肉质肥厚脆嫩，淡淡杏仁香",
+            "price": "￥2.99",
+            "oldPrice": "￥3.9",
+            "shopName": "杏鲍菇",
+            "place": "河北",
+            "saveTime": "",
+            "saveCondition": "3.0~10.0°C",
+            "Specifications": "200g"
+        },
+        {
+            "shopId": 1002,
+            "slideImg": [
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/20a0097a-14bf-47dd-8ced-5a54657b4bd8.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/e441dcb5-efcb-494d-92e9-3b4741f87a58.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/f60e3d5c-7e7e-4fcf-83e8-4c4ed03037c2.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/e441dcb5-efcb-494d-92e9-3b4741f87a58.jpg"
+                }
+            ],
+            "shopTitle": "水晶青虾仁300g",
+            "flavor": "晶莹剔透，无海腥味（青虾仁也叫南美白对虾仁，我厨青虾仁规格在71/90）",
+            "price": "￥36",
+            "oldPrice": "",
+            "shopName": "水晶青虾仁",
+            "place": "广东湛江",
+            "saveTime": "360天",
+            "saveCondition": "-25.0~-18.0°C",
+            "Specifications": "300g"
+        },
+        {
+            "shopId": 1003,
+            "slideImg": [
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/aac2db11-f5ad-46f0-b285-251bc385d73c.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/89c0766a-3f86-4896-a857-1a5f6c81f10c.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/0b936582-9cf1-45dd-aacb-69c8e9258668.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/40afe909-1d9d-474b-8827-db24d0793c36.jpg"
+                }
+            ],
+            "shopTitle": "中粮家佳康精肉丝300g",
+            "flavor": "中粮严苛标准，健康100%",
+            "price": "￥12",
+            "oldPrice": "￥18.9",
+            "shopName": "中粮家佳康精肉丝300g",
+            "place": "江苏东台",
+            "saveTime": "5天",
+            "saveCondition": "0.0~4.0°C",
+            "Specifications": "300g"
+        },
+        {
+            "shopId": 1004,
+            "slideImg": [
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/fda6c5ed-f6a5-4b4b-aefe-add120c7beb4.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/bf759a35-afa8-41ec-947d-c5791a80263d.jpg"
+                },
+                {
+                    "imgUrl": "http://img.i-kitchen.cn/upload/4e78f0a6-32bf-44dc-bd37-d95b6858857b.jpg"
+                }
+            ],
+            "shopTitle": "以色列西柚2粒装",
+            "flavor": "以色列国家地理标志水果",
+            "price": "￥7.7",
+            "oldPrice": "￥12",
+            "shopName": "以色列西柚2粒装",
+            "place": "以色列",
+            "saveTime": "7天",
+            "saveCondition": "4.0~6.0°C",
+            "Specifications": "2粒"
+        }
+    ]
+}

@@ -45,7 +45,7 @@ main{
 	width: 100%;
 	height: 15.2rem;
 	/*background-color: yellow;*/
-	border: 0.05rem solid red;
+	/*border: 0.05rem solid red;*/
 	position: absolute;
 	top: 1.2rem;
 	overflow-y: auto;
@@ -74,6 +74,7 @@ main{
 	width: 100%;
 	background-color: #FFFFFF;
 	font-size: 100%;
+	padding-top: 0.133rem;
 }
 #menu>ul{
 	width: 100%;
@@ -87,6 +88,117 @@ main{
 	height: 2.3rem;
 }
 #menu>ul>li>a>img{
-	width: 1.7rem;
-	height: 1.7rem;
+	width: 1.8rem;
+	height: 1.8rem;
+}
+
+#list{
+	width: 100%;
+	background-color: #FFFFFF;
+	margin-bottom: 0.267rem;
+}
+#list>ul{
+	width: 100%;
+	list-style: none;
+}
+#list>ul>li{
+	width: 100%;
+}
+#list>ul>li>a>img{
+	width: 100%;
+	height: 4rem;
+}
+
+#groom{
+	width: 100%;
+	background-color: #FFFFFF;
+}
+#groom>img{
+	width: 100%;
+	height: 1.07rem;
+	
+}
+
+#listShop>img{
+	width: 100%;
+	height: 4rem;
+}
+
+#listShop{
+	margin-bottom: 0.133rem;
+}
+
+#listFood>ul{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:  space-around;
+	padding: 0.133rem;
+	padding-top: 0.4rem;
+	list-style: none;
+}
+#listFood>ul>li{
+	width: 2.6rem;
+	height: 4.2rem;
+	margin-bottom: 0.133rem;
+	position: relative;
+}
+#listFood>ul>li>a{
+	text-decoration: none;
+}
+#listFood>ul>li>a>figure>img{
+	width: 2.5712rem;
+	height: 2.5712rem;
+}
+#listFood>ul>li>a>figure>figcaption>p{
+	font-size: 0.26rem;
+	color: #333;
+	width: 100%;
+}
+#listFood>ul>li>a>figure>figcaption>img{
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	right: 0;
+	bottom: 0.213rem;
+}
+.oldPrice{
+	text-decoration: line-through;
+	color: #999;
+	font-size: 0.24rem;
+	position: absolute;
+	bottom: 0.3rem;
+}
+.price{
+	font-size: 0.3rem;
+	color: #f96d16;
+	position: absolute;
+	bottom: 0;
+}
+
+#commodityMuseum{
+	width: 100%;
+	background-color: #FFFFFF;
+}
+#commodityMuseum>img{
+	width: 100%;
+	height: 1.07rem;
+}
+
+#listCommodity{
+	width: 100%;
+	background-color: #f4f5f7;
+}
+#listCommodity>ul{
+	width: 100%;
+	list-style: none;
+}
+#listCommodity>ul>li{
+	width: 100%;
+	border-bottom: 0.533rem;
+}
+#listCommodity>ul>li>a>img{
+	width: 100%;
+	height: 4rem;
 }
