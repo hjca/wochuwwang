@@ -52,12 +52,37 @@ angular.module("myApp")
 		$css.add("css/classCtrl.css");
 		
 	}])
-	.controller("CartCtrl", ["$css",function($css){
-		$css.add("css/cart.css");
+	.controller("CartCtrl", ["$css","$location",function($css,$location){
+		
+		var message = JSON.parse(window.localStorage.getItem("message"));
+		var mesId = message.id;
+		
+		if(mesId != 1){
+//			$location.path('cart');
+			$css.add("css/cart.css");
+		}else{
+			$location.path('cartMess');
+		}
 		
 	}])
-	.controller("MineCtrl", ["$css",function($css){
-		$css.add("css/mine.css");
+	.controller("CartMessCtrl",["$css",function($css){
+		$css.add("css/cartSecond.css");
+	}])
+	.controller("MineCtrl", ["$css","$location",function($css,$location){
+		var id = JSON.parse(window.localStorage.getItem("message")).id;
+		
+		if(id == 1){
+			$css.add("css/mine.css");
+		}else{
+			$location.path("login");
+		}
+		var self = this;
+		self.signOut = function(){
+			var message = JSON.parse(window.localStorage.getItem("message"));
+			message.id = 0;
+			window.localStorage.setItem("message", JSON.stringify(message));
+			$location.path("home");
+		}
 		
 	}])
 	//商品详情
@@ -87,9 +112,19 @@ angular.module("myApp")
 			}
 		}
 		
-		//加好
+		//加号
 		self.add = function(){
 			self.num++;
+		}
+		
+		//返回按钮
+		self.goback = function(){
+			window.history.back();
+		}
+		
+		//添加购物车
+		self.addCart = function(){
+			self.nums = self.num
 		}
 		
 		$http.get("./json/shopMessage.json")
@@ -114,4 +149,36 @@ angular.module("myApp")
 				console.log("说取数据失败");
 			})
 		
+	}])
+	//登录
+	.controller("LoginCtrl", ["$css",function($css){
+		$css.add("css/login.css");
+		
+	}])
+	//注册
+	.controller("RegisterCtrl", ["$css",function($css){
+		$css.add("css/register.css");
+		var self = this;
+		self.regBack = function(){
+			window.history.back();
+		}
+		
+		self.complete = function(){
+			
+//			if(self.phones == "" && self.passwords == ""){
+//				alert("手机号和密码不能为空！！");
+//			}
+			
+			var message = {
+				phoneNum : self.phones,
+				registerCtrl : self.passwords,
+				id : 1
+			}
+			if(self.phones == "" && self.passwords == ""){
+				alert("手机号和密码不能为空！！");
+			}else{
+				window.localStorage.setItem("message", JSON.stringify(message));
+				window.location.href="#/home";
+			}
+		}
 	}])

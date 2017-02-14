@@ -1,0 +1,42 @@
+<div id="login">
+	<hr id="loginHr" />
+	<br />
+	<div id="longTitle">登录</div>
+	<span>手机号码：</span><input type="text" id="phone" placeholder="请输入手机号码" />
+	<br />
+	<br />
+	<br />
+	<span>登录密码：</span><input type="password" id="password" placeholder="请输入您的登录密码" />
+	<br />
+	<br />
+	<br />
+	<div id="loginBut">提交</div>
+	<br />
+	<br />
+	<a id="register" href="#/register">立即注册>></a>
+</div>
+<script type="text/javascript">
+	var jsPhone = document.querySelector("#phone");
+	var jsPassWord = document.querySelector("#password");
+	var jsBut = document.querySelector("#loginBut");
+	
+	jsBut.addEventListener("click",fun,false);
+
+	function fun(){
+		var phoneValue = jsPhone.value;
+		var passValue = jsPassWord.value;
+		
+		var message = JSON.parse(window.localStorage.getItem("message"));
+		
+		if(jsPhone.value != message.phoneNum){
+			alert("输入的电话错误！！");
+		}else if(jsPassWord.value != message.registerCtrl){
+			alert("输入的密码错误！！");
+		}else{
+			alert("登陆成功！！");
+			message.id = 1;
+			window.localStorage.setItem("message", JSON.stringify(message));
+			window.location.href = "#/home.html";
+		}
+	}
+</script>

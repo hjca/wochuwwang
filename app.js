@@ -5,7 +5,11 @@ angular.module("myApp",["ngRoute","angularCSS"])
 			if ($window.location.href.indexOf("mine") != -1) {
 				$rootScope.rootIsFooterShow = false;
 			}else if($window.location.href.indexOf("detail") != -1){
-				
+				$rootScope.rootIsFooterShow = false;
+			}else if($window.location.href.indexOf("login") != -1){
+				$rootScope.rootIsFooterShow = false;
+			}else if($window.location.href.indexOf("register") != -1){
+				$rootScope.rootIsFooterShow = false;
 			}else {
 				$rootScope.rootIsFooterShow = true;
 			}
@@ -24,6 +28,10 @@ angular.module("myApp",["ngRoute","angularCSS"])
 			templateUrl : "view/cart.html",
 			controller : "CartCtrl as cartCtrl"
 		})
+		.when("/cartMess",{
+			templateUrl : "view/cartMess.html",
+			controller : "CartMessCtrl as cartMessCtrl"
+		})
 		.when("/mine",{
 			templateUrl : "view/mine.html",
 			controller : "MineCtrl as mineCtrl"
@@ -32,6 +40,14 @@ angular.module("myApp",["ngRoute","angularCSS"])
 		.when("/detail/:shopId",{
 			templateUrl : './view/detail.html',
 			controller : "DetailCtrl as detailCtrl"
+		})
+		.when("/login",{
+			templateUrl : './view/login.html',
+			controller : "LoginCtrl as loginCtrl"
+		})
+		.when("/register",{
+			templateUrl : './view/register.html',
+			controller : "RegisterCtrl as registerCtrl"
 		})
 		.otherwise({
 			redirectTo : '/home'

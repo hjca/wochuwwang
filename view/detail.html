@@ -9,7 +9,7 @@
 		<div id="banner_pagination" class="swiper-pagination"></div>
 	</div>
 	
-	<div id="goback">
+	<div id="goback" ng-click="detailCtrl.goback();">
 		<img src="image/back_icon_bg3.png"/>
 	</div>
 	
@@ -44,7 +44,18 @@
 </main>
 <div id="footer">
 	<a href="javascript:void(0)"><img src="image/cart_n.png"/></a>
-	<div id="addCart">
-		<a href="javascript:void(0)">加入购物车</a>
-	</div>
+	<div id="addCart" ng-click="detailCtrl.addCart();">加入购物车</div>
+	<p id="detailNum">{{ detailCtrl.nums }}</p>
+	<a href="#/cartMess" id="pray">立即结算吧>></a>
 </div>
+
+<script type="text/javascript">
+	var jsCart = document.querySelector("#addCart");
+	var jsPray = document.querySelector("#pray");
+	
+	jsCart.addEventListener("click",fun,false);
+	
+	function fun(){
+		jsPray.style.display = "block";
+	}
+</script>

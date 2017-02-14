@@ -1,0 +1,55 @@
+#registerMessage{
+	width: 100%;
+	height: 1.333rem;
+	background-color: white;
+	border-bottom: 0.0267rem solid #55ba42;
+	position: fixed;
+	top: 0;
+	line-height: 1.333rem;
+	text-align: center;
+}
+#registerImg{
+	width: 0.533rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 0.267rem;
+	left: 0.267rem;
+}
+#registerMessage>span{
+	font-size: 0.533rem;
+	font-weight: bold;
+}
+
+#regWrite{
+	width: 100%;
+	padding-left: 0.267rem;
+	background-color: white;
+	position: absolute;
+	top: 1.68rem;
+}
+#phones,#passwords{
+	border: none;
+	outline:medium;
+}
+#phone,#passwords{
+	width: 9.333rem;
+	height: 1.333rem;
+	line-height: 1.333rem;
+}
+#phone{
+	border-bottom: 0.0267rem solid #999999;
+}
+
+#regAndLog{
+	width: 9.333rem;
+	height: 1.067rem;
+	background-color: #FE4203;
+	color: white;
+	font-weight: bold;
+	font-size: 0.533rem;
+	text-align: center;
+	line-height: 1.067rem;
+	position: absolute;
+	top: 5.333rem;
+	left: 0.267rem;
+}

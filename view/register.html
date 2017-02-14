@@ -1,0 +1,17 @@
+<div id="registerMessage">
+	<img id="registerImg" src="image/back.gif" ng-click="registerCtrl.regBack();" />
+	<span>注册</span>
+</div>
+
+<div id="regWrite">
+	<div id="phone">
+		<input type="text" id="phones" ng-model="registerCtrl.phones" value="phones" placeholder="输入手机号" />
+	</div>
+	<div id="password">
+		<input type="password" id="passwords" ng-model="registerCtrl.passwords" value="passwords" placeholder="密码由6-20位组成" />
+	</div>
+</div>
+
+<div id="regAndLog" ng-click="registerCtrl.complete();">
+	注册并登录
+</div>
