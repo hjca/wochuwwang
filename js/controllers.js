@@ -33,7 +33,6 @@ angular.module("myApp")
 		$http.get("json/indexShop.json")
 			.success(function(result){
 				self.listShops = result.data;
-//				$rootScope.shopIds = self.
 			})
 			.error(function(){
 				console.log("数据请求失败");
@@ -58,15 +57,67 @@ angular.module("myApp")
 		var mesId = message.id;
 		
 		if(mesId != 1){
-//			$location.path('cart');
+			$location.path('cart');
 			$css.add("css/cart.css");
 		}else{
-			$location.path('cartMess');
+			$location.path('cartMess/3');
 		}
 		
 	}])
-	.controller("CartMessCtrl",["$css",function($css){
+	.controller("CartMessCtrl",["$css","$location","$http","$routeParams",function($css,$location,$http,$routeParams){
 		$css.add("css/cartSecond.css");
+		
+		var arr = ["一","二","三","四","五","六","日"];
+		
+		var self = this;
+		self.cartReturn = function(){
+			$location.path("classify");
+		}
+		
+		var date = new Date();
+		self.week = date.toLocaleDateString().substring(5) + "周" + arr[date.getDay()-1];
+		
+		if(date.getMinutes() <= 9){
+			self.time = date.getHours() + " : " + "0" + date.getMinutes();
+		}else{
+			self.time = date.getHours() + " : "  + date.getMinutes();
+		}
+		
+		self.cartNum = 1;
+		
+		//减号
+		self.cartSub = function(){
+			if(self.cartNum <= 1){
+				self.cartNum = 1;
+			}else{
+				self.cartNum--;
+			}
+		}
+		
+		//加号
+		self.cartAdd = function(){
+			self.cartNum++;
+		}
+		
+		
+		//获取数据
+		$http.get("./json/shopMessage.json")
+			.success(function(result){
+				
+				for (var shopObj of result.shopMessage) {
+					if($routeParams.shopIds == shopObj.shopId){
+						self.img = shopObj.logoImg;
+						self.shopName = shopObj.shopTitle;
+						self.newPrice = shopObj.price;
+						self.oldPrice = shopObj.oldPrice;
+						self.buyNum = shopObj.buyNum;
+					}
+					
+				}
+			})
+			.error(function(){
+				console.log("说取数据失败");
+			})
 	}])
 	.controller("MineCtrl", ["$css","$location",function($css,$location){
 		var id = JSON.parse(window.localStorage.getItem("message")).id;
@@ -140,7 +191,8 @@ angular.module("myApp")
 						self.addres = shopObj.place;
 						self.saveTim = shopObj.saveTime;
 						self.saveT = shopObj.saveCondition;
-						self.cations = shopObj.Specifications
+						self.cations = shopObj.Specifications;
+						self.shopIds = shopObj.shopId;
 					}
 				}
 				console.log(result.shopMessage);

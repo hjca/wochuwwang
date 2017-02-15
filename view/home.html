@@ -24,7 +24,7 @@
 		<ul>
 			<li ng-repeat="item in homeCtrl.menus track by $index">
 				<a href="javascript:void(0)">
-					<img src="{{ item.activity.img }}"/>
+					<img ng-src="{{ item.activity.img }}" />
 				</a>
 			</li>
 		</ul>
@@ -34,7 +34,7 @@
 		<ul>
 			<li ng-repeat="list in homeCtrl.lists track by $index">
 				<a ng-href="javascript:void(0)">
-					<img src="{{ list.img }}"/>
+					<img ng-src="{{ list.img }}" />
 				</a>
 			</li>
 		</ul>
@@ -44,14 +44,14 @@
 		<img src="image/homeImg6.jpg"/>
 	</div>
 	<div id="listShop" ng-repeat="listShop in homeCtrl.listShops">
-		<img src="{{ listShop.titleImg }}"/>
+		<img ng-src="{{ listShop.titleImg }}" />
 		<div id="listFood">
 			<ul>
 				<li ng-repeat="listFood in listShop.shopList">
 					<!-- 连接到商品详情界面 -->
 					<a href="#/detail/{{ listFood.shopId }}">
 						<figure>
-							<img src="{{ listFood.shopImg }}"/>
+							<img ng-src="{{ listFood.shopImg }}" />
 							<figcaption>
 								<p>{{ listFood.shopName }}</p>
 								<span class="oldPrice">{{ listFood.oldPrice }}</span><br />
@@ -72,7 +72,7 @@
 		<ul>
 			<li ng-repeat="listCommodity in homeCtrl.listCommodities track by $index">
 				<a href="javascript:void(0)">
-					<img src="{{ listCommodity.image }}"/>
+					<img ng-src="{{ listCommodity.image }}" />
 				</a>
 			</li>
 		</ul>

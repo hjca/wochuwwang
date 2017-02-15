@@ -28,7 +28,7 @@ angular.module("myApp",["ngRoute","angularCSS"])
 			templateUrl : "view/cart.html",
 			controller : "CartCtrl as cartCtrl"
 		})
-		.when("/cartMess",{
+		.when("/cartMess/:shopIds",{
 			templateUrl : "view/cartMess.html",
 			controller : "CartMessCtrl as cartMessCtrl"
 		})

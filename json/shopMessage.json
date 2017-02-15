@@ -21,7 +21,9 @@
             "place": "河北",
             "saveTime": "",
             "saveCondition": "3.0~10.0°C",
-            "Specifications": "200g"
+            "Specifications": "200g",
+            "buyNum": "限购5件",
+            "logoImg": "http://img.i-kitchen.cn/upload/f3da21ee-cd92-4936-a44e-ff263438de4b.jpg"
         },
         {
             "shopId": 1002,
@@ -47,7 +49,9 @@
             "place": "广东湛江",
             "saveTime": "360天",
             "saveCondition": "-25.0~-18.0°C",
-            "Specifications": "300g"
+            "Specifications": "300g",
+            "buyNum": "",
+            "logoImg": "http://img.i-kitchen.cn/upload/a7f44e1b-accf-49a8-a346-93a501b2907c.jpg"
         },
         {
             "shopId": 1003,
@@ -73,7 +77,9 @@
             "place": "江苏东台",
             "saveTime": "5天",
             "saveCondition": "0.0~4.0°C",
-            "Specifications": "300g"
+            "Specifications": "300g",
+            "buyNum": "",
+            "logoImg": "http://img.i-kitchen.cn/upload/ebb0913d-2116-4fab-ae40-85eca2693507.jpg"
         },
         {
             "shopId": 1004,
@@ -96,7 +102,9 @@
             "place": "以色列",
             "saveTime": "7天",
             "saveCondition": "4.0~6.0°C",
-            "Specifications": "2粒"
+            "Specifications": "2粒",
+            "buyNum": "限购5件",
+            "logoImg": "http://img.i-kitchen.cn/upload/09e394ce-82a4-4f0e-ba1c-c31b1e2c72f6.jpg"
         }
     ]
 }

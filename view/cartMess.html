@@ -1,3 +1,30 @@
 <div id="cartHeader">
-	
+	<img src="image/back.png" ng-click="cartMessCtrl.cartReturn();" />
+	<img src="image/location.png" />
+	<span>请填写地址</span>
+	<img src="image/down-arr.png"/>
+	<span>编辑</span>
 </div>
+<div id="cartTime">
+	<div id="cartWeek">{{ cartMessCtrl.week }}</div>
+	<div id="cartTime">{{ cartMessCtrl.time }}</div>
+</div>
+
+<div id="cartBox">
+	<div id="cartList">
+		<ul id="cartUl">
+			<li>
+				<input type="checkbox" />
+				<img ng-src="{{ cartMessCtrl.img }}" />
+				<span>{{ cartMessCtrl.shopName }}</span>
+				<span>{{ cartMessCtrl.buyNum }}</span>
+				<span class="cartOldPrice">{{ cartMessCtrl.newPrice }}</span>
+				<span class="cartPrice">{{ cartMessCtrl.oldPrice }}</span>
+				<div class="cartSub" ng-click="cartMessCtrl.cartSub();"><img src="image/disminus.png"/></div>
+				<div class="cartNum">{{ cartMessCtrl.cartNum }}</div>
+				<div class="cartAdd" ng-click="cartMessCtrl.cartAdd();"><img src="image/plus.png"/></div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="Total"></div>
