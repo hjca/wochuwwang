@@ -1,3 +1,5 @@
+//定义一个空数组，用来保存详情界面传递过来的数据
+var data = [];
 angular.module("myApp")
 	.controller("HomeCtrl", ["$css","$http","$rootScope",function($css,$http,$rootScope){
 		$css.add("css/home.css");
@@ -64,7 +66,7 @@ angular.module("myApp")
 		}
 		
 	}])
-	.controller("CartMessCtrl",["$css","$location","$http","$routeParams",function($css,$location,$http,$routeParams){
+	.controller("CartMessCtrl",["$css","$location","$http","$routeParams","$rootScope","$timeout","$scope",function($css,$location,$http,$routeParams,$rootScope,$timeout,$scope){
 		$css.add("css/cartSecond.css");
 		
 		var arr = ["一","二","三","四","五","六","日"];
@@ -75,42 +77,69 @@ angular.module("myApp")
 		}
 		
 		var date = new Date();
-		self.week = date.toLocaleDateString().substring(5) + "周" + arr[date.getDay()-1];
+			self.week = date.toLocaleDateString().substring(5) + "周" + arr[date.getDay()-1];
+			
+			if(date.getMinutes() <= 9){
+				self.time = date.getHours() + " : " + "0" + date.getMinutes();
+			}else{
+				self.time = date.getHours() + " : "  + date.getMinutes();
+			}
 		
-		if(date.getMinutes() <= 9){
-			self.time = date.getHours() + " : " + "0" + date.getMinutes();
-		}else{
-			self.time = date.getHours() + " : "  + date.getMinutes();
-		}
+		$timeout(function(){
+			var date = new Date();
+			self.week = date.toLocaleDateString().substring(5) + "周" + arr[date.getDay()-1];
+			
+			if(date.getMinutes() <= 9){
+				self.time = date.getHours() + " : " + "0" + date.getMinutes();
+			}else{
+				self.time = date.getHours() + " : "  + date.getMinutes();
+			}
+		},60000)
 		
 		self.cartNum = 1;
+		var addNums = 0;
 		
 		//减号
-		self.cartSub = function(){
-			if(self.cartNum <= 1){
-				self.cartNum = 1;
+		self.cartSub = function(index){
+			if(data[index].addNum <= 1){
+				alert("亲，不能再减了");
 			}else{
-				self.cartNum--;
+				data[index].addNum--;
 			}
 		}
 		
 		//加号
-		self.cartAdd = function(){
-			self.cartNum++;
+		self.cartAdd = function(index){
+			
+			data[index].addNum++;
 		}
 		
+		//将商品详情界面的数值赋值到购物车中
+		self.addNum = $routeParams.num;
+		
+		//计算总价格
+		$scope.totalPrice = function(){
+			var total = 0;
+			angular.forEach(data,function(item){
+				total += item.addNum * item.price;
+			});
+			return total;
+		}
 		
 		//获取数据
 		$http.get("./json/shopMessage.json")
 			.success(function(result){
 				
+				$rootScope.data1 = result.shopMessage;
+				
 				for (var shopObj of result.shopMessage) {
 					if($routeParams.shopIds == shopObj.shopId){
-						self.img = shopObj.logoImg;
-						self.shopName = shopObj.shopTitle;
-						self.newPrice = shopObj.price;
-						self.oldPrice = shopObj.oldPrice;
-						self.buyNum = shopObj.buyNum;
+						
+						self.totalPrice = shopObj.price;
+						
+						data.push(shopObj);
+						self.items = data;
+						
 					}
 					
 				}
@@ -118,6 +147,9 @@ angular.module("myApp")
 			.error(function(){
 				console.log("说取数据失败");
 			})
+		self.delete = function(index){
+			data.splice(index,1);
+		}
 	}])
 	.controller("MineCtrl", ["$css","$location",function($css,$location){
 		var id = JSON.parse(window.localStorage.getItem("message")).id;
@@ -230,6 +262,7 @@ angular.module("myApp")
 				alert("手机号和密码不能为空！！");
 			}else{
 				window.localStorage.setItem("message", JSON.stringify(message));
+				alert("注册成功");
 				window.location.href="#/home";
 			}
 		}

@@ -1,1 +1,15 @@
-<div id="signOut" ng-click="mineCtrl.signOut();">退出当前账号</div>
+<div id="cartHeader">
+	<a href="javascript:void(0)"><img src="image/center_image_user@3x.png"/></a>
+	<span id="phone">111111111</span>
+</div>
+<div id="mineBox">
+	<img src="image/backimg.png"/>
+</div>
+<div id="mineFooter" ng-click="mineCtrl.signOut();">
+	退出当前账号
+</div>
+<script type="text/javascript">
+	var jsPhone = document.querySelector("#phone");
+	var phoneNums = JSON.parse(window.localStorage.getItem("message")).phoneNum;
+	jsPhone.innerHTML = phoneNums;
+</script>

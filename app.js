@@ -14,6 +14,8 @@ angular.module("myApp",["ngRoute","angularCSS"])
 				$rootScope.rootIsFooterShow = true;
 			}
 		});
+		$rootScope.data1 = [];
+		$rootScope.num = 0
 	}])
 	.config(["$routeProvider",function($routeProvider){
 		$routeProvider.when("/home",{
@@ -28,13 +30,17 @@ angular.module("myApp",["ngRoute","angularCSS"])
 			templateUrl : "view/cart.html",
 			controller : "CartCtrl as cartCtrl"
 		})
-		.when("/cartMess/:shopIds",{
+		.when("/cartMess/:shopIds/:num",{
 			templateUrl : "view/cartMess.html",
 			controller : "CartMessCtrl as cartMessCtrl"
 		})
 		.when("/mine",{
 			templateUrl : "view/mine.html",
 			controller : "MineCtrl as mineCtrl"
+		})
+		.when("/cartMine",{
+			templateUrl : "view/mine.html",
+			controller : "cartMineCtrl as messageCtrl"
 		})
 		//商品详情界面
 		.when("/detail/:shopId",{

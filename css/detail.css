@@ -165,8 +165,8 @@ main{
 	position: absolute;
 	z-index: 10;
 	border-radius: 50%;
-	top: 30px;
-	left: 10px;
+	top: 0.8rem;
+	left: .267rem;
 }
 #goback>img{
 	width: 0.533rem;
@@ -187,14 +187,15 @@ main{
 	position: absolute;
 	top: 0.133rem;
 	left: 1.333rem;
+	display: none;
 }
 
 #footer a:nth-of-type(2){
 	text-decoration: none;
 	color: #000000;
 	position: absolute;
-	left: 85px;
-	font-size: 18px;
-	top: 5px;
+	left: 2.267rem;
+	font-size: 0.48rem;
+	top: .133rem;
 	display: none;
 }

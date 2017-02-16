@@ -47,7 +47,7 @@
 	background-color: #f96d16;
 	border-radius: 0.133rem;
 	color: white;
-	font-size: 20px;
+	font-size: .533rem;
 	font-weight: bold;
 }
 
@@ -56,5 +56,13 @@
 	color: #f96d16;
 	font-size: 0.40rem;
 	position: absolute;
-	right: 30px;
+	right: 0.8rem;
+}
+
+#goback{
+	text-decoration: none;
+	color: #f96d16;
+	font-size: 0.40rem;
+	position: absolute;
+	left: 0.75rem;
 }

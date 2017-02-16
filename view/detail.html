@@ -18,7 +18,7 @@
 		<br />
 		<span>{{ detailCtrl.flavors }}</span>
 		<br />
-		<span id="price">{{ detailCtrl.pric }}</span>
+		<span id="price">￥{{ detailCtrl.pric }}</span>
 		<span id="oldPrice">{{ detailCtrl.oldPric }}</span>
 		<div id="num">
 			<img src="image/btn_des_down.png" ng-click="detailCtrl.sub();" />
@@ -46,16 +46,18 @@
 	<a href="javascript:void(0)"><img src="image/cart_n.png" /></a>
 	<div id="addCart" ng-click="detailCtrl.addCart();">加入购物车</div>
 	<p id="detailNum">{{ detailCtrl.nums }}</p>
-	<a href="#/cartMess/{{ detailCtrl.shopIds }}" id="pray">立即结算吧>></a>
+	<a href="#/cartMess/{{ detailCtrl.shopIds }}/{{ detailCtrl.num }}" id="pray">立即结算吧>></a>
 </div>
 
 <script type="text/javascript">
 	var jsCart = document.querySelector("#addCart");
 	var jsPray = document.querySelector("#pray");
+	var jsNum = document.querySelector("#detailNum");
 	
 	jsCart.addEventListener("click",fun,false);
 	
 	function fun(){
 		jsPray.style.display = "block";
+		jsNum.style.display = "block";
 	}
 </script>

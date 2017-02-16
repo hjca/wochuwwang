@@ -13,18 +13,42 @@
 <div id="cartBox">
 	<div id="cartList">
 		<ul id="cartUl">
-			<li>
-				<input type="checkbox" />
-				<img ng-src="{{ cartMessCtrl.img }}" />
-				<span>{{ cartMessCtrl.shopName }}</span>
-				<span>{{ cartMessCtrl.buyNum }}</span>
-				<span class="cartOldPrice">{{ cartMessCtrl.newPrice }}</span>
-				<span class="cartPrice">{{ cartMessCtrl.oldPrice }}</span>
-				<div class="cartSub" ng-click="cartMessCtrl.cartSub();"><img src="image/disminus.png"/></div>
-				<div class="cartNum">{{ cartMessCtrl.cartNum }}</div>
-				<div class="cartAdd" ng-click="cartMessCtrl.cartAdd();"><img src="image/plus.png"/></div>
+			<li ng-repeat="item in cartMessCtrl.items track by $index">
+				<input type="checkbox" checked="checked" class="shopInp" />
+				<img ng-src="{{ item.logoImg }}" />
+				<span>{{ item.shopTitle }}</span>
+				<span>{{ item.buyNum }}</span>
+				<span class="cartOldPrice">￥{{ item.price }}</span>
+				<span class="cartPrice">{{ item.oldPrice }}</span>
+				<div class="cartSub" ng-click="cartMessCtrl.cartSub($index);"><img src="image/disminus.png"/></div>
+				<div class="cartNum">{{ item.addNum }}</div>
+				<div class="cartAdd" ng-click="cartMessCtrl.cartAdd($index);"><img src="image/plus.png"/></div>
+				<div id="delete" ng-click="cartMessCtrl.delete($index);">
+					<img src="image/delete.png" />
+				</div>
 			</li>
 		</ul>
 	</div>
 </div>
-<div id="Total"></div>
+<div id="total">
+	<input type="checkbox" checked="checked" id="cartAll" />
+	<span>合计：</span>
+	<span>￥{{ totalPrice() }}</span>
+	<span>不含运费(全场满99元包邮)</span>
+	<p>结算</p>
+</div>
+
+<script type="text/javascript">
+	var jsAll = document.querySelector("#cartAll");
+	var jsShop = document.querySelector(".shopInp");
+	console.log(jsAll);
+	console.log(jsShop);
+	
+	$("#cartAll").click(function(){
+		if($(this).prop("checked")){
+			$(":checkbox").prop("checked",true);
+		}else{
+			$(":checkbox").prop("checked",false);
+		}
+	});
+</script>

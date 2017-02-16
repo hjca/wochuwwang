@@ -15,7 +15,7 @@
             ],
             "shopTitle": "杏鲍菇（200g）",
             "flavor": "肉质肥厚脆嫩，淡淡杏仁香",
-            "price": "￥2.99",
+            "price": 2.99,
             "oldPrice": "￥3.9",
             "shopName": "杏鲍菇",
             "place": "河北",
@@ -23,7 +23,8 @@
             "saveCondition": "3.0~10.0°C",
             "Specifications": "200g",
             "buyNum": "限购5件",
-            "logoImg": "http://img.i-kitchen.cn/upload/f3da21ee-cd92-4936-a44e-ff263438de4b.jpg"
+            "logoImg": "http://img.i-kitchen.cn/upload/f3da21ee-cd92-4936-a44e-ff263438de4b.jpg",
+            "addNum": 1
         },
         {
             "shopId": 1002,
@@ -43,7 +44,7 @@
             ],
             "shopTitle": "水晶青虾仁300g",
             "flavor": "晶莹剔透，无海腥味（青虾仁也叫南美白对虾仁，我厨青虾仁规格在71/90）",
-            "price": "￥36",
+            "price": 36,
             "oldPrice": "",
             "shopName": "水晶青虾仁",
             "place": "广东湛江",
@@ -51,7 +52,8 @@
             "saveCondition": "-25.0~-18.0°C",
             "Specifications": "300g",
             "buyNum": "",
-            "logoImg": "http://img.i-kitchen.cn/upload/a7f44e1b-accf-49a8-a346-93a501b2907c.jpg"
+            "logoImg": "http://img.i-kitchen.cn/upload/a7f44e1b-accf-49a8-a346-93a501b2907c.jpg",
+            "addNum": 1
         },
         {
             "shopId": 1003,
@@ -71,7 +73,7 @@
             ],
             "shopTitle": "中粮家佳康精肉丝300g",
             "flavor": "中粮严苛标准，健康100%",
-            "price": "￥12",
+            "price": 12,
             "oldPrice": "￥18.9",
             "shopName": "中粮家佳康精肉丝300g",
             "place": "江苏东台",
@@ -79,7 +81,8 @@
             "saveCondition": "0.0~4.0°C",
             "Specifications": "300g",
             "buyNum": "",
-            "logoImg": "http://img.i-kitchen.cn/upload/ebb0913d-2116-4fab-ae40-85eca2693507.jpg"
+            "logoImg": "http://img.i-kitchen.cn/upload/ebb0913d-2116-4fab-ae40-85eca2693507.jpg",
+            "addNum": 1
         },
         {
             "shopId": 1004,
@@ -96,7 +99,7 @@
             ],
             "shopTitle": "以色列西柚2粒装",
             "flavor": "以色列国家地理标志水果",
-            "price": "￥7.7",
+            "price": 7.7,
             "oldPrice": "￥12",
             "shopName": "以色列西柚2粒装",
             "place": "以色列",
@@ -104,7 +107,8 @@
             "saveCondition": "4.0~6.0°C",
             "Specifications": "2粒",
             "buyNum": "限购5件",
-            "logoImg": "http://img.i-kitchen.cn/upload/09e394ce-82a4-4f0e-ba1c-c31b1e2c72f6.jpg"
+            "logoImg": "http://img.i-kitchen.cn/upload/09e394ce-82a4-4f0e-ba1c-c31b1e2c72f6.jpg",
+            "addNum": 1
         }
     ]
 }

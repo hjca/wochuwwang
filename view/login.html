@@ -14,6 +14,7 @@
 	<br />
 	<br />
 	<a id="register" href="#/register">立即注册>></a>
+	<a id="goback" href="#/home.html"><<返回</a>
 </div>
 <script type="text/javascript">
 	var jsPhone = document.querySelector("#phone");
@@ -36,7 +37,7 @@
 			alert("登陆成功！！");
 			message.id = 1;
 			window.localStorage.setItem("message", JSON.stringify(message));
-			window.location.href = "#/home.html";
+			window.location.href = "./index.html";
 		}
 	}
 </script>
